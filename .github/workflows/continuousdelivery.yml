@@ -1,0 +1,21 @@
+name: Continuous Delivery
+on: 
+  push:
+    branches: 
+      - main
+
+
+jobs:
+  delivery:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+
+      - name: Simulando Continuous Delivery
+        uses: actions/upload-artifact@v4
+        with:
+          name: proejeto
+          path: |
+            '**.ipynb'
+            README.md
