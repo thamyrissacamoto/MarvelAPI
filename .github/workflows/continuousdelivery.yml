@@ -17,5 +17,5 @@ jobs:
         with:
           name: proejeto
           path: |
-            '**.ipynb'
+            '**/*.ipynb'
             README.md
